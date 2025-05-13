@@ -8,44 +8,56 @@
 </head>
 <body>
     <aside>
-        <div>
+        <div class="logo">
             <img src="./img/odin.png" alt="">
             <h1>Odin</h1>
         </div>
-        <p>
-            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie
-            West</a> on <a href="https://unsplash.com/">Unsplash</a>
+        <p class="photo-credit">
+            Photo by <a class="credit-link"
+                href="https://unsplash.com/@haliewestphoto">
+            Halie West</a> on <a class="credit-link"
+                                  href="https://unsplash.com/">
+            Unsplash </a>
         </p>
     </aside>
     <main>
-        <h2>This is not a real online service! You know you need something
-            like this in your life to help you realize your deepest dreams.
-        Sign up <em>now</em> to get started. </h2>
-        <h2>You <em>know</em> you want to.</h2>
-        <h2>Let's do this!</h2>
-        <form>
-            <label for="first-name">First name</label>
-            <input type="text" id="first-name" name="first-name" required>
+        <div class="hero">
+            <h2>This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started. </h2>
+            <h2>You <em>know</em> you want to.</h2>
+        </div>
 
-            <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" required>
+        <div class="form-container">
+            <h2 class="form-header">Let's do this!</h2>
+            <form>
+                <label for="first-name">FIRST NAME
+                    <input type="text" id="first-name" name="first-name" required>
+                </label>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+                <label for="last-name">LAST NAME
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
 
-            <label for="phone-number">Phone number</label>
-            <input type="tel" id="phone-number" name="phone-number" required>
+                <label for="email">EMAIL
+                    <input type="email" id="email" name="email" required>
+                </label>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+                <label for="phone-number">PHONE NUMBER
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                </label>
 
-            <label for="password2">Password</label>
-            <input type="password" id="password2" name="password" required>
+                <label for="password">PASSWORD
+                    <input type="password" id="password" name="password" required>
+                </label>
 
-            <button type="submit">Create account</button>
-
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </form>
+                <label for="password2">CONFIRM PASSWORD
+                    <input type="password" id="password2" name="password2" required>
+                </label>
+            </form>
+        </div>
+        <button type="submit">Create account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
     </main>
 </body>
 </html>

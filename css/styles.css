@@ -1,9 +1,131 @@
- * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
- }
+@font-face {
+    font-family: 'norse-bold';
+    src: url('/fonts/norse-bold-webfont.woff2') format("woff2");
+    src: url('/fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: system-ui, sans-serif;
+}
+
+
 
 aside {
     background: url("../img/background-img.jpg");
+    background-size: cover;
+    width: 400px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-family: "norse-bold", sans-serif;
+    color: #F8FAFB;
+    font-size: 8rem;
+}
+
+.photo-credit {
+    color: #F8FAFB;
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.5rem;
+}
+
+.credit-link {
+    color: #F8FAFB;
+}
+
+img {
+    width: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F8FAFB;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    padding-left: 2rem;
+    padding-right: 6rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+button {
+    border: none;
+    background-color: #596D48;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.form-container{
+    background-color: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    padding-bottom: 2rem;
+    column-gap: 3rem;
+    row-gap: 1rem;
+}
+
+.form-header {
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 200px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
